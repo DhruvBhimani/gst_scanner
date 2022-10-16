@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gst_users",
+  "info": {
+    "singularName": "gst-user",
+    "pluralName": "gst-users",
+    "displayName": "GST user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "GSTIN": {
+      "type": "string",
+      "unique": true
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "unique": false,
+      "required": false,
+      "type": "biginteger"
+    },
+    "EmailId": {
+      "type": "email",
+      "default": "xyz@gmail.com",
+      "unique": false
+    },
+    "State": {
+      "type": "string"
+    }
+  }
+}
